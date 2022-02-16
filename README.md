@@ -74,7 +74,7 @@ bash run_train.sh <DATASET>
 ```
 
 ## 评估
-使用prophetNet源码的[评估脚本](https://pan.baidu.com/s/1FOnd01rNvDJoONYegacq1Q), 此脚本依赖于pyrouge，需要提前安装rouge。
+使用prophetNet源码的[评估脚本](https://github.com/microsoft/ProphetNet/tree/master/GLGE_baselines/script/script/evaluate), 此脚本依赖于pyrouge，需要提前安装rouge。
 ```
 pip install git+https://github.com/pltrdy/pyrouge
 ```
