@@ -278,6 +278,7 @@ class ProphetNetTokenizer(PretrainedTokenizer):
         """
 
     resource_files_names = {"vocab_file": "prophetnet.tokenizer"}
+    pretrained_resource_files_map = {}
 
     def __init__(self,
                  vocab_file,
