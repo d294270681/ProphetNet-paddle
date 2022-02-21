@@ -73,6 +73,12 @@ python uncase_tokenize_data.py --dataset <DATASET>
 bash run_train.sh <DATASET>
 ```
 
+已经finetune好的模型权重：
+
+- cnndm : [链接](https://pan.baidu.com/s/1cemrUDxkqEW9raoasJ_VKw), 提取码：1egi
+
+- gigaword : [链接](https://pan.baidu.com/s/1qRH2FStT3vNQtDjZLkYJBQ), 提取码：on5v
+
 ## 评估
 使用prophetNet源码的[评估脚本](https://github.com/microsoft/ProphetNet/tree/master/GLGE_baselines/script/script/evaluate), 此脚本依赖于pyrouge，需要提前安装rouge。
 ```
