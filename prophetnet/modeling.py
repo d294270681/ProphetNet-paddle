@@ -105,9 +105,6 @@ class ProphetNetPretrainedModel(PretrainedModel):
         "prophetnet-large-uncased": {
             "activation_dropout": 0.1,
             "activation_function": "gelu",
-            "architectures": [
-                "ProphetNetForConditionalGeneration"
-            ],
             "attention_dropout": 0.1,
             "bos_token_id": 102,
             "decoder_ffn_dim": 4096,
@@ -121,49 +118,25 @@ class ProphetNetPretrainedModel(PretrainedModel):
             "encoder_max_position_embeddings": 513,
             "eos_token_id": 102,
             "eps": 0.1,
-            "gradient_checkpointing": True,
             "hidden_size": 1024,
-            "id2label": {
-                "0": "LABEL_0",
-                "1": "LABEL_1",
-                "2": "LABEL_2"
-            },
             "init_std": 0.02,
-            "is_encoder_decoder": True,
-            "label2id": {
-                "LABEL_0": 0,
-                "LABEL_1": 1,
-                "LABEL_2": 2
-            },
             "max_position_embeddings": 512,
-            "model_type": "prophetnet",
             "ngram": 2,
             "num_buckets": 32,
             "num_decoder_attention_heads": 16,
             "num_decoder_layers": 12,
             "num_encoder_attention_heads": 16,
             "num_encoder_layers": 12,
-            "output_past": False,
             "pad_token_id": 0,
-            "prefix": " ",
             "relative_max_distance": 128,
-            "early_stopping": True,
             "length_penalty": 2.0,
             "no_repeat_ngram_size": 3,
             "num_beams": 4,
             "max_length": 142,
-            "task_specific_params": {
-                "summarization": {
-                    "early_stopping": True,
-                    "length_penalty": 2.0,
-                    "no_repeat_ngram_size": 3,
-                    "num_beams": 4
-                }
-            },
             "vocab_size": 30522
         },
     }
-    resource_files_names = {}
+    resource_files_names = {"model_state": "model_state.pdparams"}
     pretrained_resource_files_map = {}
     base_model_prefix = "prophetnet"
 
